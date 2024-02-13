@@ -107,26 +107,26 @@ while(1)
 
 void create()
 {
-    struct node *shuvo, *temp;
+    struct node *new, *ptr;
     shuvo=(struct node *)malloc(sizeof(struct node));
 
     printf("Enter The Data \n");
-    scanf("%d",&shuvo->data);
-    shuvo->next=NULL;
+    scanf("%d",&new->data);
+    new->next=NULL;
 
     if(head==NULL)
     {
-        head=shuvo;
+        head=new;
     }
     else
     {
         temp=head;
-        while(temp->next!=NULL)
+        while(ptr->next!=NULL)
         {
-            temp=temp->next;   //traversing 
+            ptr=ptr->next;   //traversing 
         }
 
-        temp->next=shuvo;    //putting the new address data(shuvo) in the temp-next
+        ptr->next=new;    //putting the new address data(shuvo) in the temp-next
     }
 
 }
