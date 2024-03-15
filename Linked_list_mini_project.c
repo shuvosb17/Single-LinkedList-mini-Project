@@ -108,7 +108,7 @@ while(1)
 void create()
 {
     struct node *new, *ptr;
-    shuvo=(struct node *)malloc(sizeof(struct node));
+    new=(struct node *)malloc(sizeof(struct node));
 
     printf("Enter The Data \n");
     scanf("%d",&new->data);
