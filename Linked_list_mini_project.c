@@ -120,7 +120,7 @@ void create()
     }
     else
     {
-        temp=head;
+        ptr=head;
         while(ptr->next!=NULL)
         {
             ptr=ptr->next;   //traversing 
